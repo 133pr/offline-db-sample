@@ -1,4 +1,4 @@
-import DB from "offline-db";
+import DB from "storix-db";
 
 let connectedDb;
 

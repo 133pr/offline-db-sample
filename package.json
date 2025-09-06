@@ -1,5 +1,5 @@
 {
-  "name": "offline-db-sample",
+  "name": "storix-db-sample",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "link": "^2.1.1",
-    "offline-db": "file:../offline-db/offline-db-0.1.tgz",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "storix-db": "^0.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",

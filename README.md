@@ -1,11 +1,11 @@
-# offline-db
+# storix-db
 
-[![npm](https://img.shields.io/npm/v/offline-db.svg)](https://www.npmjs.com/package/offline-db)
-[![npm downloads](https://img.shields.io/npm/dm/offline-db.svg)](https://www.npmjs.com/package/offline-db)
+[![npm](https://img.shields.io/npm/v/storix-db.svg)](https://www.npmjs.com/package/storix-db)
+[![npm downloads](https://img.shields.io/npm/dm/storix-db.svg)](https://www.npmjs.com/package/storix-db)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub Repo stars](https://img.shields.io/github/stars/133pr/offline-db-sample?style=social)](https://github.com/133pr/offline-db-sample)
-[![GitHub forks](https://img.shields.io/github/forks/133pr/offline-db-sample?style=social)](https://github.com/133pr/offline-db-sample)
-[![GitHub issues](https://img.shields.io/github/issues/133pr/offline-db-sample)](https://github.com/133pr/offline-db-sample/issues)
+[![GitHub Repo stars](https://img.shields.io/github/stars/133pr/storix-db?style=social)](https://github.com/133pr/storix-db)
+[![GitHub forks](https://img.shields.io/github/forks/133pr/storix-db?style=social)](https://github.com/133pr/storix-db)
+[![GitHub issues](https://img.shields.io/github/issues/133pr/storix-db)](https://github.com/133pr/storix-db/issues)
 
 A lightweight client-side database wrapper for **React.js** and **Vue.js**, supporting both **IndexedDB** and **LocalStorage**. Ideal for storing data offline in a simple and consistent way.
 
@@ -25,7 +25,7 @@ A lightweight client-side database wrapper for **React.js** and **Vue.js**, supp
 
 ## Installation
 ```bash
-npm install offline-db
+npm install storix-db
 ```
 ---
 
@@ -33,7 +33,7 @@ npm install offline-db
 
 ### 1. Using IndexedDB
 ```javascript
-import DB from "offline-db";
+import DB from "storix-db";
 
 let connectedDb;
 
@@ -64,7 +64,7 @@ console.log(user); // { name: "John" }
 
 ### 2. Using LocalStorage
 ```javascript
-import DB from "offline-db";
+import DB from "storix-db";
 
 let connectedDb;
 
@@ -137,7 +137,7 @@ Type definitions are included out of the box.
 ## Contributing
 
 Contributions and bug reports are welcome!  
-Please open an [issue](https://github.com/yourusername/offline-db/issues) or submit a pull request.
+Please open an [issue](https://github.com/yourusername/storix-db/issues) or submit a pull request.
 
 ---
 
