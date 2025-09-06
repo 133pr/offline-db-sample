@@ -3,6 +3,9 @@
 [![npm](https://img.shields.io/npm/v/offline-db.svg)](https://www.npmjs.com/package/offline-db)
 [![npm downloads](https://img.shields.io/npm/dm/offline-db.svg)](https://www.npmjs.com/package/offline-db)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![GitHub Repo stars](https://img.shields.io/github/stars/133pr/offline-db-sample?style=social)](https://github.com/133pr/offline-db-sample)
+[![GitHub forks](https://img.shields.io/github/forks/133pr/offline-db-sample?style=social)](https://github.com/133pr/offline-db-sample)
+[![GitHub issues](https://img.shields.io/github/issues/133pr/offline-db-sample)](https://github.com/133pr/offline-db-sample/issues)
 
 A lightweight client-side database wrapper for **React.js** and **Vue.js**, supporting both **IndexedDB** and **LocalStorage**. Ideal for storing data offline in a simple and consistent way.
 
@@ -35,18 +38,18 @@ import DB from "offline-db";
 let connectedDb;
 
 const connectToDb = () => {
-connectedDb = new DB("access_token", "indexedDB");
-return true;
+    connectedDb = new DB("access_token", "indexedDB");
+    return true;
 };
 
 const storeToDb = (key, value, table) => {
-if (!connectedDb) connectToDb();
-return connectedDb.store(key, value, table);
+    if (!connectedDb) connectToDb();
+    return connectedDb.store(key, value, table);
 };
 
 const loadFromDb = async (key, table) => {
-if (!connectedDb) connectToDb();
-return connectedDb.load(key, table);
+    if (!connectedDb) connectToDb();
+    return connectedDb.load(key, table);
 };
 
 export { storeToDb, loadFromDb };
@@ -66,18 +69,18 @@ import DB from "offline-db";
 let connectedDb;
 
 const connectToDb = () => {
-connectedDb = new DB("access_token", "localstorage");
-return true;
+    connectedDb = new DB("access_token", "localstorage");
+    return true;
 };
 
 const storeToDb = (key, value) => {
-if (!connectedDb) connectToDb();
-return connectedDb.store(key, value);
+    if (!connectedDb) connectToDb();
+    return connectedDb.store(key, value);
 };
 
 const loadFromDb = async (key) => {
-if (!connectedDb) connectToDb();
-return connectedDb.load(key);
+    if (!connectedDb) connectToDb();
+    return connectedDb.load(key);
 };
 
 export { storeToDb, loadFromDb };
