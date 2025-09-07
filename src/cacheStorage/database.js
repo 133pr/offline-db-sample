@@ -3,7 +3,7 @@ import DB from "storix-db";
 let connectedDb;
 
 const connectToDb = () => {
-    connectedDb = new DB("access_token", "indexedDB");
+    connectedDb = new DB("access_token", "cacheStorage");
     return true;
 };
 

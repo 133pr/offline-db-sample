@@ -3,6 +3,7 @@ import viteLogo from '/vite.svg';
 import './App.css';
 import {default as LocalStorageButton} from "./localstorage/Button";
 import {default as IndexedDbButton} from "./indexedDB/Button";
+import {default as CacheStorageButton} from "./cacheStorage/Button";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <div className="card">
                 <LocalStorageButton/>
                 <IndexedDbButton/>
+                <CacheStorageButton/>
             </div>
         </>
     );
